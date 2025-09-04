@@ -1,0 +1,150 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #137dcf;
+    color: #333;
+}
+
+/* Header styles */
+.header-container {
+    background: url('showroom.avif') no-repeat center center/cover; /* Ensure the correct path for the image */
+    text-align: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    color: white;
+    height: 400px; /* Set a fixed height for the header */
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    width: 150px; /* Increase logo size */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 3px solid #fff; /* Optional: Add a border for emphasis */
+}
+
+/* Main title styles */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 20px;
+}
+
+.navigation {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px; /* Space between navigation items */
+    padding: 0;
+}
+
+.nav-link {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background 0.3s ease; /* Transition effect for hover */
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Car gallery styles */
+.car-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Individual car item styles */
+.car-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Car image styles */
+.car-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Car details styles */
+.car-details {
+    margin-top: 10px;
+}
+
+/* Button styles */
+.car-button {
+    display: inline-block;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.car-button:hover {
+    background-color: #1976d2;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .car-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
